@@ -32,7 +32,7 @@ def footer():
 
 
     """)
-
+    warna.print_footer("")
     warna.print_fail("=================================")
 
 

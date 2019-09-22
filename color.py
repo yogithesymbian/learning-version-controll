@@ -30,6 +30,7 @@ class ColorPrint:
     @staticmethod
     def print_footer(message, end='\n'):
         sys.stdout.write('\x1b[1;37m' + message.strip() + '\x1b[0m' + end)
+        sys.stdout.write("(C) 2019\n")
 
     @staticmethod
     def print_header(message, end='\n'):
