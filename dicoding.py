@@ -2,7 +2,13 @@ __author__ = "yogithesymbian"
 import sys
 from color import ColorPrint as warna
 
-print("dicodingidn")
+# print("dicodingidn")
+
+
+def header():
+    warna.print_warn("============================")
+    warna.print_warn("\t HEADER")
+    warna.print_warn("============================")
 
 
 def start():
@@ -15,6 +21,7 @@ def start():
 
 if __name__ == '__main__':
     try:
+        header()
         start()
     except KeyboardInterrupt as err:
         print(err)
