@@ -5,6 +5,10 @@ from color import ColorPrint as warna
 # print("dicodingidn")
 
 
+def hackNasa():
+    print("hello world")
+
+
 def header():
     warna.print_warn("============================")
     print("""
