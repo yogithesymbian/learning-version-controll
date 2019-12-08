@@ -2,7 +2,42 @@ __author__ = "yogithesymbian"
 import sys
 from color import ColorPrint as warna
 
-print("dicodingidn")
+# print("dicodingidn")
+
+
+def hackNasa():
+    print("hello world")
+
+
+def header():
+    warna.print_warn("============================")
+    print("""
+
+ _   _ _____    _    ____  _____ ____
+| | | | ____|  / \  |  _ \| ____|  _
+| |_| |  _|   / _ \ | | | |  _| | |_) |
+|  _  | |___ / ___ \| |_| | |___|  _ <
+|_| |_|_____/_/   \_\____/|_____|_| \_
+
+    """)
+    warna.print_warn("============================")
+
+
+def footer():
+    warna.print_fail("=================================")
+
+    print("""
+
+     _____ ___   ___ _____ _____ ____
+|  ___/ _ \ / _ \_   _| ____|  _
+| |_ | | | | | | || | |  _| | |_) |
+|  _|| |_| | |_| || | | |___|  _ <
+|_|   \___/ \___/ |_| |_____|_| \_
+
+
+    """)
+    warna.print_footer("")
+    warna.print_fail("=================================")
 
 
 def start():
@@ -11,10 +46,12 @@ def start():
     print(authorName)
     print(authorUrl)
     warna.print_pass("gitkraken")
+    footer()
 
 
 if __name__ == '__main__':
     try:
+        header()
         start()
     except KeyboardInterrupt as err:
         print(err)
